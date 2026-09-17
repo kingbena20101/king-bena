@@ -1,28 +1,37 @@
+```html
 <!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>King Bena — Boutique</title>
-  <meta name="description" content="King Bena — boutique de vêtements premium.">
+  <title>KOBA — Boutique</title>
+  <meta name="description" content="KOBA — boutique de vêtements premium au style royal.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <div class="announcement">✨ NOUVELLE COLLECTION BIENTÔT — LIVRAISON À VENIR</div>
 
   <header class="header">
-    <a class="brand" href="#"><span class="brand-mark">KB</span><span>KING BENA</span></a>
+    <a class="brand" href="#">
+      <span class="brand-mark">K</span>
+      <span>KOBA</span>
+    </a>
+
     <nav>
       <a href="#boutique">Boutique</a>
       <a href="#collection">Collection</a>
       <a href="#apropos">À propos</a>
     </nav>
+
     <div class="header-actions">
       <button class="icon-btn" id="searchBtn" aria-label="Rechercher">⌕</button>
-      <button class="icon-btn cart-btn" id="cartBtn" aria-label="Panier">🛒<span id="cartCount">0</span></button>
+      <button class="icon-btn cart-btn" id="cartBtn" aria-label="Panier">
+        🛒<span id="cartCount">0</span>
+      </button>
     </div>
   </header>
 
@@ -34,35 +43,62 @@
   </section>
 
   <main>
+
     <section class="hero">
       <div class="hero-copy">
-        <p class="eyebrow">KING BENA • EST. 2026</p>
-        <h1>PORTE TON<br><em>COURONNEMENT.</em></h1>
-        <p class="hero-text">Une identité. Une attitude. Une collection qui arrive bientôt.</p>
+        <p class="eyebrow">KOBA • EST. 2026</p>
+
+        <h1>
+          PORTE TON<br>
+          <em>COURONNEMENT.</em>
+        </h1>
+
+        <p class="hero-text">
+          Une identité. Une attitude. Une collection qui arrive bientôt.
+        </p>
+
         <div class="hero-buttons">
           <a class="btn btn-gold" href="#boutique">Découvrir la boutique</a>
           <a class="btn btn-light" href="#apropos">Notre histoire</a>
         </div>
       </div>
+
       <div class="hero-art">
         <div class="halo"></div>
+
         <div class="card-art">
-          <div class="kb-big">KB</div>
-          <div class="art-caption">KING<br>BENA</div>
+          <div class="kb-big">K</div>
+          <div class="art-caption">KOBA</div>
         </div>
-        <div class="floating-tag">PREMIUM<br>STREETWEAR</div>
+
+        <div class="floating-tag">
+          PREMIUM<br>
+          STREETWEAR
+        </div>
       </div>
     </section>
 
     <section class="trust-row">
-      <div>✦ QUALITÉ</div><div>✦ STYLE</div><div>✦ IDENTITÉ</div><div>✦ NOUVEAUTÉS</div>
+      <div>✦ QUALITÉ</div>
+      <div>✦ STYLE</div>
+      <div>✦ IDENTITÉ</div>
+      <div>✦ NOUVEAUTÉS</div>
     </section>
 
     <section class="section" id="boutique">
+
       <div class="section-heading">
-        <div><p class="eyebrow">SHOP</p><h2>La boutique</h2></div>
+        <div>
+          <p class="eyebrow">SHOP</p>
+          <h2>La boutique</h2>
+        </div>
+
         <div class="controls">
-          <div class="mini-search"><span>⌕</span><input id="inlineSearch" placeholder="Rechercher..." /></div>
+          <div class="mini-search">
+            <span>⌕</span>
+            <input id="inlineSearch" placeholder="Rechercher..." />
+          </div>
+
           <select id="sortSelect" aria-label="Trier les produits">
             <option value="featured">Mis en avant</option>
             <option value="price-low">Prix : bas → haut</option>
@@ -80,60 +116,132 @@
       </div>
 
       <div class="products" id="products"></div>
-      <div class="empty-state" id="emptyState" hidden>Aucun produit ne correspond à ta recherche.</div>
+
+      <div class="empty-state" id="emptyState" hidden>
+        Aucun produit ne correspond à ta recherche.
+      </div>
     </section>
 
     <section class="banner">
       <div>
         <p class="eyebrow">COMING SOON</p>
-        <h2>Ton style mérite<br>sa propre couronne.</h2>
+        <h2>
+          Ton style mérite<br>
+          sa propre couronne.
+        </h2>
       </div>
+
       <button class="btn btn-dark" id="notifyBtn">Me prévenir</button>
     </section>
 
     <section class="about section" id="apropos">
       <div>
-        <p class="eyebrow">KING BENA</p>
+        <p class="eyebrow">KOBA</p>
         <h2>Plus qu'un vêtement.</h2>
       </div>
-      <p>King Bena est pensé comme une marque à construire avec sa communauté. Cette première version du site est volontairement prête à évoluer : nouveaux produits, collections, photos, tailles, stocks et paiements pourront être ajoutés progressivement.</p>
+
+      <p>
+        KOBA est pensé comme une marque à construire avec sa communauté.
+        Une identité royale, un style premium et une collection prête à évoluer.
+        De nouveaux produits, collections, photos, tailles, stocks et paiements
+        pourront être ajoutés progressivement.
+      </p>
     </section>
+
   </main>
 
   <footer>
-    <div class="brand"><span class="brand-mark">KB</span><span>KING BENA</span></div>
-    <p>© 2026 King Bena. Tous droits réservés.</p>
-    <div class="footer-links"><a href="#">Instagram</a><a href="#">Contact</a><a href="#">Conditions</a></div>
+    <div class="brand">
+      <span class="brand-mark">K</span>
+      <span>KOBA</span>
+    </div>
+
+    <p>© 2026 KOBA. Tous droits réservés.</p>
+
+    <div class="footer-links">
+      <a href="#">Instagram</a>
+      <a href="#">Contact</a>
+      <a href="#">Conditions</a>
+    </div>
   </footer>
 
   <aside class="cart-drawer" id="cartDrawer" aria-hidden="true">
-    <div class="drawer-head"><h2>Ton panier</h2><button id="closeCart">✕</button></div>
-    <div id="cartItems" class="cart-items"></div>
-    <div class="cart-bottom">
-      <div class="total"><span>Sous-total</span><strong id="cartTotal">$0.00 CAD</strong></div>
-      <button class="btn btn-gold full" id="checkoutBtn">Passer au paiement</button>
-      <p class="secure">🔒 Paiement sécurisé — à connecter avant la mise en ligne.</p>
+
+    <div class="drawer-head">
+      <h2>Ton panier</h2>
+      <button id="closeCart">✕</button>
     </div>
+
+    <div id="cartItems" class="cart-items"></div>
+
+    <div class="cart-bottom">
+      <div class="total">
+        <span>Sous-total</span>
+        <strong id="cartTotal">$0.00 CAD</strong>
+      </div>
+
+      <button class="btn btn-gold full" id="checkoutBtn">
+        Passer au paiement
+      </button>
+
+      <p class="secure">
+        🔒 Paiement sécurisé — à connecter avant la mise en ligne.
+      </p>
+    </div>
+
   </aside>
+
   <div class="overlay" id="overlay"></div>
 
   <div class="modal" id="checkoutModal" aria-hidden="true">
+
     <div class="modal-card">
+
       <button class="modal-close" id="closeModal">✕</button>
+
       <p class="eyebrow">CHECKOUT</p>
+
       <h2>Finaliser la commande</h2>
-      <p class="muted">Le paiement est actuellement en mode démo. On pourra connecter Stripe/Shopify lorsque tes produits seront prêts.</p>
+
+      <p class="muted">
+        Le paiement est actuellement en mode démo.
+        On pourra connecter Stripe/Shopify lorsque tes produits seront prêts.
+      </p>
+
       <form id="checkoutForm">
-        <label>Nom<input required placeholder="Ton nom"></label>
-        <label>Email<input required type="email" placeholder="ton@email.com"></label>
-        <label>Adresse de livraison<input required placeholder="Adresse"></label>
-        <div class="fake-card"><span>💳</span> Paiement sécurisé (démo)</div>
-        <button class="btn btn-gold full" type="submit">Confirmer la commande</button>
+
+        <label>
+          Nom
+          <input required placeholder="Ton nom">
+        </label>
+
+        <label>
+          Email
+          <input required type="email" placeholder="ton@email.com">
+        </label>
+
+        <label>
+          Adresse de livraison
+          <input required placeholder="Adresse">
+        </label>
+
+        <div class="fake-card">
+          <span>💳</span>
+          Paiement sécurisé (démo)
+        </div>
+
+        <button class="btn btn-gold full" type="submit">
+          Confirmer la commande
+        </button>
+
       </form>
+
     </div>
   </div>
 
   <div class="toast" id="toast"></div>
+
   <script src="script.js"></script>
 </body>
 </html>
+```
