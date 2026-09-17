@@ -8,14 +8,16 @@ const products = [
   {id:6,name:"Jogger gris",category:"pants",price:49.99,badge:"NEW"}
 ];
 
-let cart = JSON.parse(localStorage.getItem("kingBenaCart") || "[]");
+let cart = JSON.parse(localStorage.getItem("kobaCart") || "[]");
 let category = "all";
 let query = "";
 
 const productsEl = document.getElementById("products");
 const emptyState = document.getElementById("emptyState");
 
-function money(n){ return "$" + n.toFixed(2) + " CAD"; }
+function money(n){
+  return "$" + n.toFixed(2) + " CAD";
+}
 
 function renderProducts(){
   let list = products.filter(p => 
@@ -32,7 +34,7 @@ function renderProducts(){
     <article class="product-card">
       <div class="product-img">
         ${p.badge ? `<span class="badge">${p.badge}</span>` : ""}
-        <span>KB</span>
+        <span>K</span>
       </div>
 
       <div class="product-info">
@@ -48,13 +50,13 @@ function renderProducts(){
 }
 
 function saveCart(){
-  localStorage.setItem("kingBenaCart", JSON.stringify(cart));
+  localStorage.setItem("kobaCart", JSON.stringify(cart));
 }
 
 function addToCart(id){
   const item = cart.find(x => x.id === id);
 
-  if(item) {
+  if(item){
     item.qty++;
   } else {
     cart.push({id, qty:1});
@@ -72,7 +74,7 @@ function changeQty(id, delta){
 
   item.qty += delta;
 
-  if(item.qty <= 0) {
+  if(item.qty <= 0){
     cart = cart.filter(x => x.id !== id);
   }
 
@@ -97,7 +99,7 @@ function renderCart(){
 
         return `
           <div class="cart-line">
-            <div class="cart-thumb">KB</div>
+            <div class="cart-thumb">K</div>
 
             <div>
               <h4>${p.name}</h4>
