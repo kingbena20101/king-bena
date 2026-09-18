@@ -1,25 +1,51 @@
 ```html
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>KOBA — Boutique</title>
-  <meta name="description" content="KOBA — boutique de vêtements premium au style royal.">
+
+  <title>KOBA STUDIO — Boutique</title>
+
+  <meta
+    name="description"
+    content="KOBA STUDIO — boutique de vêtements premium au style royal."
+  >
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap"
+    rel="stylesheet"
+  >
+
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <div class="announcement">✨ NOUVELLE COLLECTION BIENTÔT — LIVRAISON À VENIR</div>
 
+  <!-- ANNONCE -->
+  <div class="announcement">
+    ✨ NOUVELLE COLLECTION BIENTÔT — LIVRAISON À VENIR
+  </div>
+
+
+  <!-- HEADER -->
   <header class="header">
+
     <a class="brand" href="#">
-      <span class="brand-mark">K</span>
-      <span>KOBA</span>
+
+      <span class="brand-mark">KB</span>
+
+      <span>
+        KOBA<br>
+        <small>STUDIO</small>
+      </span>
+
     </a>
+
 
     <nav>
       <a href="#boutique">Boutique</a>
@@ -27,221 +53,544 @@
       <a href="#apropos">À propos</a>
     </nav>
 
+
     <div class="header-actions">
-      <button class="icon-btn" id="searchBtn" aria-label="Rechercher">⌕</button>
-      <button class="icon-btn cart-btn" id="cartBtn" aria-label="Panier">
-        🛒<span id="cartCount">0</span>
+
+      <button
+        class="icon-btn"
+        id="searchBtn"
+        aria-label="Rechercher"
+      >
+        ⌕
       </button>
+
+
+      <button
+        class="icon-btn cart-btn"
+        id="cartBtn"
+        aria-label="Panier"
+      >
+        🛒
+        <span id="cartCount">0</span>
+      </button>
+
     </div>
+
   </header>
 
-  <section class="search-panel" id="searchPanel">
+
+  <!-- RECHERCHE -->
+  <section
+    class="search-panel"
+    id="searchPanel"
+  >
+
     <div class="search-wrap">
-      <input id="searchInput" type="search" placeholder="Rechercher un vêtement..." autocomplete="off">
-      <button id="clearSearch">✕</button>
+
+      <input
+        id="searchInput"
+        type="search"
+        placeholder="Rechercher un vêtement..."
+        autocomplete="off"
+      >
+
+      <button id="clearSearch">
+        ✕
+      </button>
+
     </div>
+
   </section>
+
 
   <main>
 
+
+    <!-- HERO -->
     <section class="hero">
+
       <div class="hero-copy">
-        <p class="eyebrow">KOBA • EST. 2026</p>
+
+        <p class="eyebrow">
+          KOBA STUDIO • EST. 2026
+        </p>
+
 
         <h1>
           PORTE TON<br>
           <em>COURONNEMENT.</em>
         </h1>
 
+
         <p class="hero-text">
           Une identité. Une attitude. Une collection qui arrive bientôt.
         </p>
 
+
         <div class="hero-buttons">
-          <a class="btn btn-gold" href="#boutique">Découvrir la boutique</a>
-          <a class="btn btn-light" href="#apropos">Notre histoire</a>
+
+          <a
+            class="btn btn-gold"
+            href="#boutique"
+          >
+            Découvrir la boutique
+          </a>
+
+
+          <a
+            class="btn btn-light"
+            href="#apropos"
+          >
+            Notre histoire
+          </a>
+
         </div>
+
       </div>
 
+
+      <!-- ART HERO -->
       <div class="hero-art">
+
         <div class="halo"></div>
 
+
         <div class="card-art">
-          <div class="kb-big">K</div>
-          <div class="art-caption">KOBA</div>
+
+          <div class="kb-big">
+            KB
+          </div>
+
+
+          <div class="art-caption">
+            KOBA<br>
+            STUDIO
+          </div>
+
         </div>
+
 
         <div class="floating-tag">
           PREMIUM<br>
           STREETWEAR
         </div>
+
       </div>
+
     </section>
 
+
+    <!-- TRUST -->
     <section class="trust-row">
+
       <div>✦ QUALITÉ</div>
       <div>✦ STYLE</div>
       <div>✦ IDENTITÉ</div>
       <div>✦ NOUVEAUTÉS</div>
+
     </section>
 
-    <section class="section" id="boutique">
+
+    <!-- BOUTIQUE -->
+    <section
+      class="section"
+      id="boutique"
+    >
 
       <div class="section-heading">
+
         <div>
-          <p class="eyebrow">SHOP</p>
-          <h2>La boutique</h2>
+
+          <p class="eyebrow">
+            SHOP
+          </p>
+
+          <h2>
+            La boutique
+          </h2>
+
         </div>
+
 
         <div class="controls">
+
           <div class="mini-search">
+
             <span>⌕</span>
-            <input id="inlineSearch" placeholder="Rechercher..." />
+
+            <input
+              id="inlineSearch"
+              placeholder="Rechercher..."
+            >
+
           </div>
 
-          <select id="sortSelect" aria-label="Trier les produits">
-            <option value="featured">Mis en avant</option>
-            <option value="price-low">Prix : bas → haut</option>
-            <option value="price-high">Prix : haut → bas</option>
+
+          <select
+            id="sortSelect"
+            aria-label="Trier les produits"
+          >
+
+            <option value="featured">
+              Mis en avant
+            </option>
+
+            <option value="price-low">
+              Prix : bas → haut
+            </option>
+
+            <option value="price-high">
+              Prix : haut → bas
+            </option>
+
           </select>
+
         </div>
+
       </div>
 
-      <div class="categories" id="collection">
-        <button class="filter active" data-category="all">Tout</button>
-        <button class="filter" data-category="hoodies">Hoodies</button>
-        <button class="filter" data-category="tshirts">T-shirts</button>
-        <button class="filter" data-category="pants">Pantalons</button>
-        <button class="filter" data-category="accessories">Accessoires</button>
+
+      <!-- CATÉGORIES -->
+      <div
+        class="categories"
+        id="collection"
+      >
+
+        <button
+          class="filter active"
+          data-category="all"
+        >
+          Tout
+        </button>
+
+
+        <button
+          class="filter"
+          data-category="hoodies"
+        >
+          Hoodies
+        </button>
+
+
+        <button
+          class="filter"
+          data-category="tshirts"
+        >
+          T-shirts
+        </button>
+
+
+        <button
+          class="filter"
+          data-category="pants"
+        >
+          Pantalons
+        </button>
+
+
+        <button
+          class="filter"
+          data-category="accessories"
+        >
+          Accessoires
+        </button>
+
       </div>
 
-      <div class="products" id="products"></div>
 
-      <div class="empty-state" id="emptyState" hidden>
+      <!-- PRODUITS -->
+      <div
+        class="products"
+        id="products"
+      ></div>
+
+
+      <div
+        class="empty-state"
+        id="emptyState"
+        hidden
+      >
         Aucun produit ne correspond à ta recherche.
       </div>
+
     </section>
 
+
+    <!-- BANNER -->
     <section class="banner">
+
       <div>
-        <p class="eyebrow">COMING SOON</p>
+
+        <p class="eyebrow">
+          COMING SOON
+        </p>
+
+
         <h2>
           Ton style mérite<br>
           sa propre couronne.
         </h2>
+
       </div>
 
-      <button class="btn btn-dark" id="notifyBtn">Me prévenir</button>
+
+      <button
+        class="btn btn-dark"
+        id="notifyBtn"
+      >
+        Me prévenir
+      </button>
+
     </section>
 
-    <section class="about section" id="apropos">
+
+    <!-- À PROPOS -->
+    <section
+      class="about section"
+      id="apropos"
+    >
+
       <div>
-        <p class="eyebrow">KOBA</p>
-        <h2>Plus qu'un vêtement.</h2>
+
+        <p class="eyebrow">
+          KOBA STUDIO
+        </p>
+
+
+        <h2>
+          Plus qu'un vêtement.
+        </h2>
+
       </div>
 
+
       <p>
-        KOBA est pensé comme une marque à construire avec sa communauté.
-        Une identité royale, un style premium et une collection prête à évoluer.
-        De nouveaux produits, collections, photos, tailles, stocks et paiements
-        pourront être ajoutés progressivement.
+        KOBA STUDIO est pensé comme une marque à construire
+        avec sa communauté. Une identité royale, un style premium
+        et une collection prête à évoluer.
+        De nouveaux produits, collections, photos, tailles,
+        stocks et paiements pourront être ajoutés progressivement.
       </p>
+
     </section>
 
   </main>
 
+
+  <!-- FOOTER -->
   <footer>
+
     <div class="brand">
-      <span class="brand-mark">K</span>
-      <span>KOBA</span>
+
+      <span class="brand-mark">
+        KB
+      </span>
+
+
+      <span>
+        KOBA<br>
+        <small>STUDIO</small>
+      </span>
+
     </div>
 
-    <p>© 2026 KOBA. Tous droits réservés.</p>
+
+    <p>
+      © 2026 KOBA STUDIO. Tous droits réservés.
+    </p>
+
 
     <div class="footer-links">
-      <a href="#">Instagram</a>
-      <a href="#">Contact</a>
-      <a href="#">Conditions</a>
+
+      <a href="#">
+        Instagram
+      </a>
+
+      <a href="#">
+        Contact
+      </a>
+
+      <a href="#">
+        Conditions
+      </a>
+
     </div>
+
   </footer>
 
-  <aside class="cart-drawer" id="cartDrawer" aria-hidden="true">
+
+  <!-- PANIER -->
+  <aside
+    class="cart-drawer"
+    id="cartDrawer"
+    aria-hidden="true"
+  >
 
     <div class="drawer-head">
-      <h2>Ton panier</h2>
-      <button id="closeCart">✕</button>
+
+      <h2>
+        Ton panier
+      </h2>
+
+
+      <button id="closeCart">
+        ✕
+      </button>
+
     </div>
 
-    <div id="cartItems" class="cart-items"></div>
+
+    <div
+      id="cartItems"
+      class="cart-items"
+    ></div>
+
 
     <div class="cart-bottom">
+
       <div class="total">
-        <span>Sous-total</span>
-        <strong id="cartTotal">$0.00 CAD</strong>
+
+        <span>
+          Sous-total
+        </span>
+
+
+        <strong id="cartTotal">
+          $0.00 CAD
+        </strong>
+
       </div>
 
-      <button class="btn btn-gold full" id="checkoutBtn">
+
+      <button
+        class="btn btn-gold full"
+        id="checkoutBtn"
+      >
         Passer au paiement
       </button>
+
 
       <p class="secure">
         🔒 Paiement sécurisé — à connecter avant la mise en ligne.
       </p>
+
     </div>
 
   </aside>
 
-  <div class="overlay" id="overlay"></div>
 
-  <div class="modal" id="checkoutModal" aria-hidden="true">
+  <!-- OVERLAY -->
+  <div
+    class="overlay"
+    id="overlay"
+  ></div>
+
+
+  <!-- CHECKOUT -->
+  <div
+    class="modal"
+    id="checkoutModal"
+    aria-hidden="true"
+  >
 
     <div class="modal-card">
 
-      <button class="modal-close" id="closeModal">✕</button>
+      <button
+        class="modal-close"
+        id="closeModal"
+      >
+        ✕
+      </button>
 
-      <p class="eyebrow">CHECKOUT</p>
 
-      <h2>Finaliser la commande</h2>
+      <p class="eyebrow">
+        CHECKOUT
+      </p>
+
+
+      <h2>
+        Finaliser la commande
+      </h2>
+
 
       <p class="muted">
         Le paiement est actuellement en mode démo.
         On pourra connecter Stripe/Shopify lorsque tes produits seront prêts.
       </p>
 
+
       <form id="checkoutForm">
 
         <label>
           Nom
-          <input required placeholder="Ton nom">
+
+          <input
+            required
+            placeholder="Ton nom"
+          >
+
         </label>
+
 
         <label>
           Email
-          <input required type="email" placeholder="ton@email.com">
+
+          <input
+            required
+            type="email"
+            placeholder="ton@email.com"
+          >
+
         </label>
+
 
         <label>
           Adresse de livraison
-          <input required placeholder="Adresse">
+
+          <input
+            required
+            placeholder="Adresse"
+          >
+
         </label>
 
+
         <div class="fake-card">
-          <span>💳</span>
+
+          <span>
+            💳
+          </span>
+
           Paiement sécurisé (démo)
+
         </div>
 
-        <button class="btn btn-gold full" type="submit">
+
+        <button
+          class="btn btn-gold full"
+          type="submit"
+        >
           Confirmer la commande
         </button>
 
       </form>
 
     </div>
+
   </div>
 
-  <div class="toast" id="toast"></div>
 
+  <!-- TOAST -->
+  <div
+    class="toast"
+    id="toast"
+  ></div>
+
+
+  <!-- SCRIPT -->
   <script src="script.js"></script>
+
 </body>
+
 </html>
 ```
